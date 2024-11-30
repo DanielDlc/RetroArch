@@ -29,7 +29,7 @@ jobs:
       - name: Crowdin Sync
         shell: bash
         env:
-          CROWDIN_API_KEY: ${{ secrets.CROWDIN_API_KEY }}
+          CROWDIN_API_KEY: ${{ secrets.CROWDIN_API_TOKEN }}
         run: |
           cd intl
           python3 -m pip install requests PyYAML
